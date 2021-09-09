@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+        <title>Signos</title>
+        <link href = "styles/style.css" rel = "stylesheet">
+        <link href = "https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans&display=swap" rel = "stylesheet">
+	</head>
+	<body>
+		<h1>Os signos</h1>
+        <img id="imagemSigno" src = "images/Signos.jpg" alt = "símbolo do sígno de aries em um fundo roxo estrelado" width="680px" height="350px">
+        <p id="textoSigno"></p>
+        
+        <p>Existem 12 signos, são eles:</p>
+
+        <ul>
+            <li>Áries</li>
+            <li>Touro</li>
+            <li>Gêmeos</li>
+            <li>Câncer</li>
+            <li>Leão</li>
+            <li>Virgem</li>
+            <li>Libra</li>
+            <li>Escorpião</li>
+            <li>Sagitário</li>
+            <li>Capricórnio</li>  
+            <li>Aquario</li>
+            <li>Peixes</li>
+        </ul>
+
+        <p>Você pode saber mais sobrecada um deles clicando 
+                <a id="link1" href = "https://www.signos.com.br/">aqui</a>
+        </p>
+
+
+        <form id="form" onsubmit="return false">
+            <label for="inputnascimentoUsiario">Para saber o seu signo, insira sua data de nascimento:<br></label>
+            <input type="date" id="inputNascimentoUsuario" />
+            <input type="submit" value="descobrir meu signo" onclick="descobrirSigno()" />
+        </form>
+        
+
+        <br><br><br>
+
+        <button>Change user</button>
+
+        <div>
+            <p id = "segredo"><br>um segredo: eu gosto de jogar LoL</p>
+        </div>
+        
+
+        <script 
+            src = "scripts/main.js">
+        </script>
+	</body>
+</html>
